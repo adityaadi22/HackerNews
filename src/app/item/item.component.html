@@ -1,0 +1,22 @@
+<ul *ngFor="let news of singlenewscomment">
+        <div *ngIf="news.id == newid">
+        {{news.Title}} 
+      <br /> 
+       <textarea #text>
+         </textarea>
+      <input type="hidden" #timeval value="{{today | date:' hh:mm:ss a':'+0530'}}">
+      <button (click)='addTodo(text.value, news.id, timeval.value)'> 
+              Submit
+         </button>
+        <ul *ngFor="let comment of news.comments">
+         <li>
+        {{comment}}
+       </li>
+        <p>
+            <small>
+                    <button (click)='addTodo(text.value, news.comments.id, timeval.value)'>Reply</button></small></p>
+            </ul>
+        </div>
+    </ul>
+
+

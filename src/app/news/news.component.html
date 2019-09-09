@@ -1,0 +1,8 @@
+
+<ul *ngFor="let news of newsarray">
+<li>{{news.Title}}</li>
+<button routerLink="item/{{news.id}}" >{{news.comments.length}}  comments</button>
+
+                
+
+</ul>
