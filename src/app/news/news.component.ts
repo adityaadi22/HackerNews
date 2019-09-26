@@ -23,7 +23,7 @@ newsId:number;
       this.newsarray = data;
       console.log(this.newsarray);
       for(let i=0;i<this.newsarray.length;i++){
-        console.log(this.newsarray[0].comments[0].value);
+       // console.log(this.newsarray[this.newsarray.id].comments[1].key);
       }
      // this.comments1=this.newsarray[0].comments;
       //console.log(this.comments1);
